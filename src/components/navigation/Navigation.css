@@ -1,0 +1,98 @@
+.fixed-nav {
+  position: fixed;
+  z-index: 1000;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: 40px auto auto;
+  justify-content: space-between;
+}
+
+.right{
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-column-end: end;
+  justify-self: end;
+  margin: 20px 20px;
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+  color: rgb(58, 57, 57);
+  font-family: 'CalifornianFB';
+}
+
+.left{
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: col2-start;
+  justify-self: start;
+  margin: 20px 20px;
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+  color: rgb(58, 57, 57);
+  font-family: 'CalifornianFB';
+}
+
+h1.title{
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: end;
+  justify-self: center;
+  margin: 0px 20px;
+  font-size: calc(25px + (60 - 25) * ((100vw - 300px) / (1600 - 300)));
+  color: rgb(58, 57, 57);
+  font-family: 'CalifornianFB';
+}
+
+.text {
+  color: rgb(58, 57, 57);
+  font-family: 'CalifornianFB';
+}
+
+h1.title a {
+  color: rgb(58, 57, 57);
+  text-decoration: none;
+}
+
+h1.title a:hover {
+  color: rgb(104, 104, 104);
+}
+
+hr.nav {
+  border: 1.5px solid rgb(58, 57, 57);
+  margin: 0px;
+}
+
+
+ul.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* z-index: 1000; */
+  width: 100%;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgba(255,255,255);
+}
+
+ul.nav li {
+  margin: 0px 20px;
+  padding: 0px
+}
+
+ul.nav li a {
+  display: block;
+  color: rgb(58, 57, 57);
+  font-family: 'CalifornianFB';
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+ul.nav li a:hover {
+  background-color: rgba(211, 206, 206, 0.705);
+}

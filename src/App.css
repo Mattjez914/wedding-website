@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+.content {
+  padding-top: 150px;
+  /* margin-top: 50px; */
+  /* background-color:whitesmoke; */
+  width: 100%;
+  overflow: auto;
+  height: auto;
+}
+
+.home {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.slide-show {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  flex-basis: auto;
+}
+
+.test {
+  margin-top: 500px;
+}
+
+.cover {
+  background-image: url(/cover.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+@font-face {
+	font-family: 'CalifornianFB';
+	src: url('./fonts/california-fb/CalifornianFB.eot');
+	src: local('CalifornianFB'), url('./fonts/california-fb/CalifornianFB.woff') format('woff'), url('./fonts/california-fb/CalifornianFB.ttf') format('truetype');
+}

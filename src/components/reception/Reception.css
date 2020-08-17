@@ -1,0 +1,14 @@
+.reception {
+  display: flex;
+  width: auto;
+  height: 75vh;
+  justify-content: center;
+  margin-top: 25vh;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.reception img {
+  width: auto;
+  height: 100%;
+}
