@@ -1,5 +1,4 @@
 import React from 'react';
-import { Parallax } from 'react-scroll-parallax';
 import sky from '../../images/sky.jpeg';
 import './Ceremony.css';
 
@@ -21,37 +20,32 @@ const infoStyle = {
 };
 
 const containerStyle = {
-  position: 'relative',
-  width: '25em'
+  width: 'auto', 
+  height: '75vh', 
+  justifyContent: 'center'
 };
+
+const imageStyle= {
+  eight: 'auto', 
+  maxWidth:'100vw', 
+  maxHeight:'75vh', 
+  display: 'block', 
+  marginLeft: 'auto', 
+  marginRight: 'auto',
+  padding: '20px'
+  // padding: 'calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)))'
+}
 
 const Ceremony = () => {
   return (
-    <section className="row d-flex justify-content-center" id='ceremony'>
-      <div className="vh-100">
+    <section style={containerStyle} id='ceremony'>
+      <div>
         <img
-          className="h-75"
+          style={imageStyle}
           src={sky}
           alt="sky"
         />
       </div>
-      {/* <div>
-        <p style={textStyle}>Ceremony</p>
-      </div> */}
-      {/* <div style={containerStyle}>
-      <Parallax
-        offsetYMin={-100}
-        offsetYMax={100}
-      >
-        <p style={textOneStyle}>Ceremony</p>
-      </Parallax>
-      <Parallax
-        offsetYMin={-10}
-        offsetYMax={50}
-      >
-        <p style={textTwoStyle}>Test</p>
-      </Parallax>
-      </div> */}
     </section>
   );
 }

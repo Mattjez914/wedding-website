@@ -10,7 +10,7 @@ const fixedStyle = {
 
 const headerStyle = {
   display: 'grid',
-  gridTemplateColumns: '200px auto 200px',
+  gridTemplateColumns: '100px auto 100px',
   gridTemplateRows: '40px auto',
   justifyContent: 'space-between'
 };
