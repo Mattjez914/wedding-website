@@ -21,3 +21,15 @@
   width: auto;
   height: 100%;
 }
+
+.containerCeremony {
+  position: relative;
+  width: auto;
+  height: 75vh;
+  justify-content: center;
+  background-image: url(../../images/sky.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

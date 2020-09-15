@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import './Navigation.css';
 
@@ -42,36 +43,35 @@ const lineStyle = {
   margin: '0px'
 }
 
-const Navigation = () => {
+const Navigation = React.forwardRef((props,ref) => {
   return (
-    <div style={fixedStyle}>
+    <div ref={ref} style={fixedStyle}>
       <div style={headerStyle}>
         <h4 style={dateStyle}>April 10, 2020</h4>
         <h4 style={placeStyle}>San Diego, CA</h4>
-        <h1 className="title"><AnchorLink offset='400' href='#home'>BAILEY &amp; MATTHEW</AnchorLink></h1>
+        <h1 className="title"><Link to="/">BAILEY &amp; MATTHEW</Link></h1>
       </div>
       <hr style={lineStyle}/>
       <ul className="nav">
         <li>
-          <AnchorLink offset='250' href='#ceremony'>Ceremony</AnchorLink>
+          <Link to="/ceremony">Ceremony</Link>
         </li>
         <li>
-          <AnchorLink offset='250' href='#reception'>Reception</AnchorLink>
+          <Link to="/reception">Reception</Link>
         </li>
         <li>
-          <AnchorLink offset='100' href='#experience'>Accommodations</AnchorLink>
+          <Link to="/accommodations">Accommodations</Link>
         </li>
         <li>
-          <AnchorLink offset='100' href=''>Registry</AnchorLink>
+          <Link to="/reigstry">Registry</Link>
         </li>
         <li>
-          <AnchorLink offset='100' href=''>RSVP</AnchorLink>
+          <Link to="/rsvp">RSVP</Link>
         </li>
       </ul>
       <hr style={lineStyle}/>
     </div> 
   );
-
-}
+})
 
 export default Navigation;

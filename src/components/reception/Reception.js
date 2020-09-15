@@ -21,13 +21,8 @@ const imageStyle= {
 
 const Reception = () => {
   return (
-    <section style={containerStyle} id='reception'>
+    <section className="containerReception" id='reception'>
       <div>
-        <img
-          style={imageStyle}
-          src={tent}
-          alt="sky"
-        />
       </div>
     </section>
   );

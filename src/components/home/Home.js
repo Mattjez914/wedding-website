@@ -1,13 +1,12 @@
 import React from 'react';
-import sky from '../../images/sky.jpeg';
-import './Ceremony.css';
+import cover from '../../images/cover.jpeg';
+import './Home.css';
 
 const textStyle = {
   color: 'rgb(58, 57, 57)',
   fontFamily: 'CalifornianFB',
   fontSize: '50px',
   position: 'absolute',
-  top: '10px',
   left: '20px',
   zIndex: 2
 };
@@ -21,15 +20,9 @@ const infoStyle = {
 };
 
 const containerStyle = {
-  position: 'relative',
   width: 'auto', 
-  height: '80vh', 
-  justifyContent: 'center',
-  backgroundImage: `url(${sky})`,
-  backgroundAttachment: 'fixed',
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center'
+  height: '75vh', 
+  justifyContent: 'center'
 };
 
 const imageStyle= {
@@ -43,19 +36,13 @@ const imageStyle= {
   // padding: 'calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)))'
 }
 
-const Ceremony = () => {
+const Home = () => {
   return (
-    <section style={containerStyle} id='ceremony'>
+    <section className="containerHome" id='home'>
       <div>
-        {/* <img
-          style={imageStyle}
-          src={sky}
-          alt="sky"
-        />
-        <div style={textStyle}>The Ceremony</div> */}
       </div>
     </section>
   );
 }
 
-export default Ceremony;
+export default Home;
