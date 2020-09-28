@@ -40,7 +40,7 @@ h1.title{
   grid-column-end: end;
   justify-self: center;
   margin: 0px 20px;
-  font-size: calc(25px + (60 - 25) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(18px + (60 - 18) * ((100vw - 300px) / (1600 - 300)));
   color: rgb(58, 57, 57);
   font-family: 'CalifornianFB';
 }

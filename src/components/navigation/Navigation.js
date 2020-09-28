@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import './Navigation.css';
 
 const fixedStyle = {
@@ -22,7 +21,7 @@ const dateStyle = {
   gridColumnEnd: 'col2-start',
   justifySelf: 'start',
   margin: '20px 20px',
-  fontSize: 'calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)))',
+  fontSize: 'calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)))',
   color: 'rgb(58, 57, 57)',
   fontFamily: 'CalifornianFB'
 };
@@ -33,7 +32,7 @@ const placeStyle = {
   gridColumnEnd: 'end',
   justifySelf: 'end',
   margin: '20px 20px',
-  fontSize: 'calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)))',
+  fontSize: 'calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)))',
   color: 'rgb(58, 57, 57)',
   fontFamily: 'CalifornianFB'
 };

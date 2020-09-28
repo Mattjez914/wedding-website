@@ -1,23 +1,16 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
+import Home from './components/home/Home';
+import Ceremony from './components/ceremony/Ceremony';
 import Navigation from './components/navigation/Navigation';
 import ImageSection from './components/image-section/ImageSection';
 import cover from './images/cover.jpeg';
 import sky from './images/sky.jpeg';
 import tent from './images/tent.jpeg';
+import Reception from './components/reception/Reception';
 
 const getHeight = () => window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
-const textHomeStyle = {
-  color: 'white',
-  fontFamily: 'CalifornianFB',
-  fontSize: 'calc(40px + (70 - 40) * ((100vw - 300px) / (1600 - 300)))',
-  position: 'absolute',
-  right: '30px',
-  bottom: '10px',
-  zIndex: 2
-};
 
 class App extends React.Component {
   constructor(props) {
@@ -76,13 +69,19 @@ class App extends React.Component {
               </FadeIn> */}
               <Route exact path="/">
                 {/* <h1>{this.state.relHeight}</h1> */}
-                <ImageSection image={cover} height={this.state.relHeight}><div style={textHomeStyle}>M &amp; B</div></ImageSection>
+                <ImageSection image={cover} height={this.state.relHeight}>
+                  <Home />
+                </ImageSection>
               </Route>
               <Route path="/ceremony">
-                <ImageSection image={sky} height={this.state.relHeight} />
+                <ImageSection image={sky} height={this.state.relHeight}>
+                  <Ceremony />
+                </ImageSection>
               </Route>
               <Route path="/reception">
-                <ImageSection image={tent} height={this.state.relHeight}/>
+                <ImageSection image={tent} height={this.state.relHeight}>
+                  <Reception />
+                </ImageSection>
               </Route>
               {/* <FadeIn>
                 <Reception/>

@@ -1,24 +1,5 @@
 import React from 'react';
 
-const textStyle = {
-  color: 'rgb(58, 57, 57)',
-  fontFamily: 'CalifornianFB',
-  fontSize: '50px',
-  position: 'absolute',
-  top: '10px',
-  left: '20px',
-  zIndex: 2
-};
-
-const infoStyle = {
-  color: 'rgb(58, 57, 57)',
-  fontFamily: 'CalifornianFB',
-  fontSize: '50px',
-  position: 'relative',
-  zIndex: 2       
-};
-
-
 const ImageSection = (props) => {
   const containerStyle = {
     position: 'relative',

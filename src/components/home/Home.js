@@ -1,47 +1,49 @@
 import React from 'react';
-import cover from '../../images/cover.jpeg';
-import './Home.css';
 
-const textStyle = {
+const textHomeStyle = {
   color: 'rgb(58, 57, 57)',
+  // color: 'white',
   fontFamily: 'CalifornianFB',
-  fontSize: '50px',
+  fontSize: 'calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)))',
+  marginBottom: '0px',
+  paddingBottom: '0px',
+  // backgroundColor: 'yellow',
+  height: 'calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)))',
+  alignItems: 'center',
+  display: 'flex'
+};
+
+const textHomeSmallStyle = {
+  color: 'rgb(58, 57, 57)',
+  // color: 'white',
+  fontFamily: 'CalifornianFB',
+  fontSize: 'calc(12px + (25 - 12) * ((100vw - 300px) / (1600 - 300)))',
+  marginTop: '0px',
+  paddingTop: '0px',
+  // backgroundColor: 'green',
+  height: 'calc(13px + (25 - 13) * ((100vw - 300px) / (1600 - 300)))',
+  alignItems: 'center',
+  display: 'flex'
+};
+
+const containerHomeStyle = {
   position: 'absolute',
-  left: '20px',
-  zIndex: 2
-};
-
-const infoStyle = {
-  color: 'rgb(58, 57, 57)',
-  fontFamily: 'CalifornianFB',
-  fontSize: '50px',
-  position: 'relative',
-  zIndex: 2
-};
-
-const containerStyle = {
-  width: 'auto', 
-  height: '75vh', 
-  justifyContent: 'center'
-};
-
-const imageStyle= {
-  eight: 'auto', 
-  maxWidth:'100vw', 
-  maxHeight:'75vh', 
-  display: 'block', 
-  marginLeft: 'auto', 
-  marginRight: 'auto',
-  padding: '20px'
-  // padding: 'calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)))'
+  right: '20px',
+  bottom: '20px',
+  width: 'auto',
+  height: 'auto',
+  padding: 'calc(3px + (4 - 3) * ((100vw - 300px) / (1600 - 300)))',
+  backgroundColor: 'white',
+  border: 'calc(3px + (4 - 3) * ((100vw - 300px) / (1600 - 300))) solid black',
+  borderStyle: 'double'
 }
 
 const Home = () => {
   return (
-    <section className="containerHome" id='home'>
-      <div>
-      </div>
-    </section>
+    <div className="d-flex justify-content-center flex-column align-items-center" style={containerHomeStyle}>
+      <div style={textHomeStyle}>M &amp; B</div>
+      <div style={textHomeSmallStyle}>Meant to Be</div>
+    </div>
   );
 }
 
