@@ -62,7 +62,7 @@ const Navigation = React.forwardRef((props,ref) => {
           <Link to="/accommodations">Accommodations</Link>
         </li>
         <li>
-          <Link to="/reigstry">Registry</Link>
+          <Link to="/registry">Registry</Link>
         </li>
         <li>
           <Link to="/rsvp">RSVP</Link>
