@@ -15,9 +15,9 @@ const ImageSection = (props) => {
 
   return (
     <section style={containerStyle} id='ceremony'>
-      <div>
+      {/* <div> */}
         {props.children}
-      </div>
+      {/* </div> */}
     </section>
   );
 }

@@ -11,6 +11,7 @@ import tent from './images/tent.jpeg';
 import ring from './images/ring.jpeg';
 import Reception from './components/reception/Reception';
 import ComingSoon from './components/coming-soon/ComingSoon';
+import Rsvp from './components/rsvp/Rsvp';
 
 const getHeight = () => window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
@@ -97,7 +98,7 @@ class App extends React.Component {
               </Route>
               <Route path="/rsvp">
                 <ImageSection image={ring} height={this.state.relHeight}>
-                  <ComingSoon />
+                  <Rsvp />
                 </ImageSection>
               </Route>
               {/* <FadeIn>
