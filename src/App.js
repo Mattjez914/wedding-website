@@ -15,6 +15,12 @@ import Rsvp from './components/rsvp/Rsvp';
 
 const getHeight = () => window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
+const NoMatchPage = () => {
+  return (
+    <h3>404 - Not found</h3>
+  );
+};
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -101,6 +107,7 @@ class App extends React.Component {
                   <Rsvp />
                 </ImageSection>
               </Route>
+              <Route component={NoMatchPage} />
               {/* <FadeIn>
                 <Reception/>
               </FadeIn> */}
