@@ -46,7 +46,7 @@ const Navigation = React.forwardRef((props,ref) => {
   return (
     <div ref={ref} style={fixedStyle}>
       <div style={headerStyle}>
-        <h4 style={dateStyle}>April 10, 2020</h4>
+        <h4 style={dateStyle}>April 10, 2021</h4>
         <h4 style={placeStyle}>San Diego, CA</h4>
         <h1 className="title"><Link to="/">BAILEY &amp; MATTHEW</Link></h1>
       </div>
