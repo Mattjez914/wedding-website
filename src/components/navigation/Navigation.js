@@ -64,9 +64,9 @@ const Navigation = React.forwardRef((props,ref) => {
         <li>
           <Link to="/registry">Registry</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/rsvp">RSVP</Link>
-        </li>
+        </li> */}
       </ul>
       <hr style={lineStyle}/>
     </div> 
