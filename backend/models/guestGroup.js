@@ -1,24 +1,16 @@
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
 
-module.exports = mongoose.model('Guest',
+module.exports = mongoose.model('GuestGroup',
 	new mongoose.Schema({
-		firstName: {
+		groupAlias: {
 			type:		String,
 			required:	true,
 		},
-		lastName: {
-			type:		String,
-			required:	true,
-        },
-        attending: {
-            type:       Boolean,
-            default:    null
-		},
-		vegetarian: {
-			type:		Boolean,
-			default: 	false,
-		},
+		guests: [{
+            type:	mongoose.Schema.Types.ObjectId,
+            ref:	'Guest',
+		}],
 		address: {
             type:	mongoose.Schema.Types.ObjectId,
             ref:	'Address',
